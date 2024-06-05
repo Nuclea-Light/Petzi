@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pet Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="tab-link" data-tab="signup">Sign Up</a></li>
+                <li><a href="#" class="tab-link" data-tab="login">Login</a></li>
+                <li><a href="#" class="tab-link" data-tab="products">Products</a></li>
+                <li><a href="#" class="tab-link" data-tab="accessories">Accessories</a></li>
+                <li><a href="#" class="tab-link" data-tab="vet">Vet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sign Up Form -->
+        <section id="signup" class="tab-content" style="display: none;">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="mobile-number">Mobile Number:</label>
+                <input type="text" id="mobile-number" name="mobile-number" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+       <!-- Login Form -->
+       <section id="login" class="tab-content">
+           <h2>Login</h2>
+           <form id="login-form">
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+               <label for="password">Password:</label>
+               <input type="password" id="password" name="password" required>
+               <button type="submit">Login</button>
+               <button type="button" id="forgot-password">Forgot Password</button>
+           </form>
+       </section>
+
+
+        <!-- Products Section -->
+        <section id="products" class="tab-content" style="display: none;">
+            <h2>Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="images/product1.jpg" alt="Product 1">
+                    <p>Product 1 Description</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/product2.jpg" alt="Product 2">
+                    <p>Product 2 Description</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+
+        <!-- Accessories Section -->
+        <section id="accessories" class="tab-content" style="display: none;">
+            <h2>Accessories</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="images/accessory1.jpg" alt="Accessory 1">
+                    <p>Accessory 1 Description</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/accessory2.jpg" alt="Accessory 2">
+                    <p>Accessory 2 Description</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Add more accessories as needed -->
+            </div>
+        </section>
+
+        <!-- Vet Section -->
+        <section id="vet" class="tab-content" style="display: none;">
+            <h2>Vet</h2>
+            <div class="vet-list">
+                <div class="vet">
+                    <img src="images/vet1.jpg" alt="Vet 1">
+                    <p>Vet 1 Description</p>
+                    <button>Book Appointment</button>
+                </div>
+                <div class="vet">
+                    <img src="images/vet2.jpg" alt="Vet 2">
+                    <p>Vet 2 Description</p>
+                    <button>Book Appointment</button>
+                </div>
+                <!-- Add more vet information as needed -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
